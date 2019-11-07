@@ -35,21 +35,21 @@ url : https://overthewire.org/wargames/bandit/
 	-ssh bandit3@bandit.labs.overthewire.org -p 2220
 	-password UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 	
-	-ls
-	-cd inhere
-	-ls
-	-ls -a (use -a option for hidden files)
-	-cat .hidden
-	->pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+	-ls  
+	-cd inhere  
+	-ls  
+	-ls -a (use -a option for hidden files)  
+	-cat .hidden  
+	->pIwrPrtPN36QITSp3EQaw936yaFoFgAB  
 	
 * level 4
 	**Hint:** The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
 	-ssh bandit4@bandit.labs.overthewire.org -p 2220
 	-password pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 	
-	-ls
-	-cd inhere
-	-ls
+	-ls  
+	-cd inhere  
+	-ls  
 	-file ./file* (file komutu ile dosyanın tipini öğrenebiliriz. örn "file test.txt" Burada ./ kullanıdk çünkü dosya - ile başlıyordu, daha sonra * kullanarak -file ile başlayan tüm dosyalar için çıktı vermesini sağladık)
 	-(veya farklı bir yöntem olarak find aracı kullanılabilir "find ./ -type f")
 	->./-file07: ASCII text 
