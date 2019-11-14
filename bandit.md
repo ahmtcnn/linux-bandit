@@ -58,9 +58,9 @@ url : https://overthewire.org/wargames/bandit/
 	
 * level 5  
 	**Hint:** The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:  
- * human-readable  
- * 1033 bytes in size  
- * not executable  
+	*human-readable  
+	*1033 bytes in size  
+	*not executable  
  
 	-ssh bandit5@bandit.labs.overthewire.org -p 2220  
 	-password koReBOKuIDDepwhWk7jZC0RTdopnAYKh  
@@ -76,9 +76,9 @@ url : https://overthewire.org/wargames/bandit/
 
 * level 6   
 	**Hint:** The password for the next level is stored somewhere on the server and has all of the following properties:  
- * owned by user bandit7  
- * owned by group bandit6  
- * 33 bytes in size  
+	*owned by user bandit7  
+	*owned by group bandit6  
+	*33 bytes in size  
  
 	-ssh bandit6@bandit.labs.overthewire.org -p 2220  
 	-password DXjZPULLxYr17uwoI01bNLQbtFemEgo7 
