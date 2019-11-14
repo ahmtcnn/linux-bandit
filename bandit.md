@@ -56,7 +56,7 @@ url : https://overthewire.org/wargames/bandit/
 	-cat ./-file07  
 	->koReBOKuIDDepwhWk7jZC0RTdopnAYKh  
 	
-*level 5  
+* level 5  
 	**Hint:** The password for the next level is stored in a file somewhere under the inhere directory and has all of the following properties:  
  * human-readable  
  * 1033 bytes in size  
@@ -70,11 +70,11 @@ url : https://overthewire.org/wargames/bandit/
 	-ls  
 	-find --help   
 	-find -type f -size 1033c -not -executable  
-	>./inhere/maybehere07/.file2  
+	->./inhere/maybehere07/.file2  
 	-cat ./inhere/maybehere07/.file2  
-	>DXjZPULLxYr17uwoI01bNLQbtFemEgo7  
+	->DXjZPULLxYr17uwoI01bNLQbtFemEgo7  
 
-*level 6   
+* level 6   
 	**Hint:** The password for the next level is stored somewhere on the server and has all of the following properties:  
  * owned by user bandit7  
  * owned by group bandit6  
@@ -83,8 +83,8 @@ url : https://overthewire.org/wargames/bandit/
 	-ssh bandit6@bandit.labs.overthewire.org -p 2220  
 	-password DXjZPULLxYr17uwoI01bNLQbtFemEgo7 
  
- -find /* -user bandit7 -group bandit6 -size 33c 2> /dev/null  
- >HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs  
+	-find /* -user bandit7 -group bandit6 -size 33c 2> /dev/null  
+	->HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs  
  
  
 * level 7  
@@ -93,8 +93,8 @@ url : https://overthewire.org/wargames/bandit/
 	-ssh bandit7@bandit.labs.overthewire.org -p 2220    
 	-password HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs   
 
- -cat data.txt | grep millionth  
- >cvX2JJa4CFALtqS87jk27qwqGhBM9plV  
+	-cat data.txt | grep millionth  
+	->cvX2JJa4CFALtqS87jk27qwqGhBM9plV  
 
 * level 8  
 	**Hint:**The password for the next level is stored in the file data.txt and is the only line of text that occurs only once  
@@ -102,8 +102,8 @@ url : https://overthewire.org/wargames/bandit/
  	-ssh bandit8@bandit.labs.overthewire.org -p 2220    
 	-password cvX2JJa4CFALtqS87jk27qwqGhBM9plV   
  
- -sort data.txt | uniq -c //sort sorts the file and uniq -c gives you the number of uniq lines. So you can see the line with number 1  
- >>UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR  
+	-sort data.txt | uniq -c //sort sorts the file and uniq -c gives you the number of uniq lines. So you can see the line with number 1  
+	->>UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR  
  
  
 * level 9  
@@ -113,7 +113,7 @@ url : https://overthewire.org/wargames/bandit/
 	-password UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR 
 	
 	-strings data.txt | grep "="  
-	>>truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk  
+	->truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk  
 	
 * level 10
 	**Hint:**The password for the next level is stored in the file data.txt, which contains base64 encoded data  
@@ -122,7 +122,7 @@ url : https://overthewire.org/wargames/bandit/
 	-password truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk 
 	
 	-base64 -d data.txt  
-	>IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR  
+	->IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR  
 	
 * level 11
 	**Hint:**The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions  
@@ -131,7 +131,7 @@ url : https://overthewire.org/wargames/bandit/
 	-password IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR 
 	
 	-cat data.txt | python -c 'import sys; print sys.stdin.read().decode("rot13"))'  
-	>5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu  
+	->5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu  
 	
 	
 * level 12
@@ -168,7 +168,7 @@ url : https://overthewire.org/wargames/bandit/
 	-gunzip data8.gz > data8   
 	-file data8 > data8: ASCII text  
 	-finally  -> cat data8  
-	> 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL  
+	-> 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL  
 	
 	
 * level 13  
@@ -183,9 +183,9 @@ url : https://overthewire.org/wargames/bandit/
 	-so we need to be user bandit14 to read that file. And we got ssh private key.Lets login with ssh  
 	-ssh -i sshkey.private bandit14@localhost  
 	-cat /etc/bandit_pass/bandit14   
-	>4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e (sshkey)  
+	->4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e (sshkey)  
 	-echo 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e | nc localhost 30000  
-	>BfMYroe26WYalil77FoDi9qh59eK5xNr  
+	->BfMYroe26WYalil77FoDi9qh59eK5xNr  
 	
 * level 14  
 	**Hint**he password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL encryption.  
@@ -196,5 +196,5 @@ command also works in this version of that command…
 	-password BfMYroe26WYalil77FoDi9qh59eK5xNr 
 	
 	-echo BfMYroe26WYalil77FoDi9qh59eK5xNr | openssl s_client -ign_eof -connect localhost:30001  
-	>cluFn7wTiGryunymYOu4RcffSxQluehd  
+	-> cluFn7wTiGryunymYOu4RcffSxQluehd  
 	
