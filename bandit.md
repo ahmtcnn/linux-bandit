@@ -217,7 +217,7 @@ command also works in this version of that command…
 	-password cluFn7wTiGryunymYOu4RcffSxQluehd
 	
 	-nmap 127.0.0.1 -p 31000-32000  
-	>31790. port  
+	> 31790. port  
 	-echo cluFn7wTiGryunymYOu4RcffSxQluehd | openssl s_client -ign_eof -connect localhost:31790  
 	>	-----BEGIN RSA PRIVATE KEY-----  
 		MIIEogIBAAKCAQEAvmOkuifmMg6HL2YPIOjon6iWfbp7c3jx34YkYWqUH57SUdyJ  
